@@ -619,7 +619,7 @@ def main():
     plot_amp_factor=3
     folder_pattern = "sac_files/*"
     clicker_onoff=True
-    grid_num=82 # choose this..if None, it runs for all grids in the folder.
+    grid_num=114 # choose this..if None, it runs for all grids in the folder.
     #STEP 1
     sl_klicker,slow_grd,baz_grd,deets,grid_number,utc_dt,pick_folder,ax_baz,max_mean=plot_vespa_pick_slow(folder_pattern,grid_num,clicker_onoff,plot_amp_factor)
     #when picking scatteres, the left click should be high slow/baz and right click low slow/baz!!!

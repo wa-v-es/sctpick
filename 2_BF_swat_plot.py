@@ -328,7 +328,7 @@ def get_rp_using_taup(taupserver,model,phase,scatterers):
     return lats_path,lons_path,depths_path
 #
 # def main():
-grd_num=82
+grd_num=114
 taup_path="~/Research/sct_wat/TauP/build/install/TauP/bin/taup"
 # taup_path=None
 
@@ -353,6 +353,7 @@ with taup.TauPServer(taup_path=taup_path) as taupserver:
     #########
     print(f'sum of all weights:{total_weights.sum()}')
 ##
+# sys.exit()
 
 ## just keep non zero fib grid and weights..
 
@@ -361,7 +362,7 @@ fib_grid_nz = fib_grid[nonzero]
 t_weights_nz = total_weights[nonzero]
 #
 # color_by options: Weight or Depth (km)
-color_by = input("Choose either to color scatterers by 'Weight' or 'Depth'. Type exact and it return: ")
+color_by = input("Choose either to color scatterers by 'Weight' or 'Depth'. Type exact and hit return: ")
 # color_by='Weight'
 # color_by='Depth'
 plot_weights_map(fib_grid_nz,t_weights_nz,color_by=color_by,figname='map_{}_{}.png'.format(grd_num,color_by))
