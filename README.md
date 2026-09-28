@@ -1,4 +1,4 @@
-# sctPick_swat_plot
+# sctpick
 
 First:
 Run sct_pick_vespa.py.
