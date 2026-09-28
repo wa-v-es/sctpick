@@ -5,10 +5,8 @@ cmaptools
 obspy
 xarray
 scipy
-json
-# for sct_bf_swat.py
 taup
-scattererwhereartthou
+#scattererwhereartthou
 pandas
 cartopy
 cmcrameri

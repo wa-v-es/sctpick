@@ -1,0 +1,30 @@
+[project]
+name = "sctpick"
+version = "0.1.0"
+authors=[
+  {name="Shubh Agrawal", email="agr.shubh.agr@gmail.com"}
+  ]
+description = "Add your description here"
+keywords= ["array methods","scatteres","Seismology"]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mpl-point-clicker",
+    "pygmt",
+    "cmaptools",
+    "obspy",
+    "xarray",
+    "scipy",
+    "taup",
+    "pandas",
+    "cartopy",
+    "cmcrameri",
+    "scikit-image",
+]
+
+[project.urls]
+Homepage="https://github.com/wa-v-es/sctpick"
+
+[project.scripts]
+pick_sct_vespa= "sctpick.pick_sct_vespa:main"
+swat_plot_3d= "sctpick.swat_plot_3d:main"
